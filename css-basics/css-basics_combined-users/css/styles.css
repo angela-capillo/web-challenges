@@ -76,6 +76,15 @@ aside .user {
   background-color: white;
 }
 
+ul .bio {
+  display: none;
+}
+
+ul .location {
+  align-items: left;
+  color: darkslategray;
+}
+
 /*
   Part 1
 
