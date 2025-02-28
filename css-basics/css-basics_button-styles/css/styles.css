@@ -42,6 +42,10 @@ Make sure not to put your code into the comments, because then nothing will happ
 
 .button2 {
   /* Style me! Change my color or background-color, or both! You can experiment with different color formats here, like HEX, RGB, etc. */
+  background-color: #EEFFC5;
+  color: rgb(30, 30, 30);
+  border: none;
+  color: green;
 }
 
 .button3 {
