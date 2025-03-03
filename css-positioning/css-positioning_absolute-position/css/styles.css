@@ -37,6 +37,8 @@ main {
 
 .box--top-left {
   background-color: #aed6f1;
+  top: 0px;
+  left: 0px;
 }
 
 .box--top-right {
