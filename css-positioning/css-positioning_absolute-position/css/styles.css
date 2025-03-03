@@ -37,12 +37,16 @@ main {
 
 .box--top-left {
   background-color: #aed6f1;
+  position: absolute;
   top: 0px;
   left: 0px;
 }
 
 .box--top-right {
   background-color: #5dade2;
+  position: absolute;
+  top: 0px;
+  right: 0px;
 }
 
 .box--bottom-left {
