@@ -25,7 +25,6 @@ ul {
 
 .navigation__menu > ul {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
 }
 
