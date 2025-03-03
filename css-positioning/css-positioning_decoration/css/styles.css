@@ -60,4 +60,8 @@ Hint: The z-index can also be negative!
   );
   border-radius: 999px;
   rotate: 280deg;
+  position: relative;
+    z-index: -1;
+    bottom: 50px;
+    right: 150px;
 }
