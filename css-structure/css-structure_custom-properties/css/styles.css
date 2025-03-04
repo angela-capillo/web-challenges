@@ -2,7 +2,14 @@
   --color-nemo: #ff4a11;
   --color-granite: #252629;
   --color-foam: #ffffff;
-  --border-radius-small: 4px;
+  --border-radius-s: 4px;
+  --line-height-s: 1.2;
+  --line-height-m: 1.4;
+  --letter-spacing-s: 0.025em;
+  --spacing-xs: 8px;
+  --spacing-s: 10px;
+  --spacing-l: 16px;
+  --spacing-2xl: 32px;
 }
 
 *,
@@ -14,7 +21,7 @@
 body {
   margin: 0;
   font-family: system-ui;
-  line-height: 1.2;
+  line-height: var(--line-height-s);
 }
 
 header {
@@ -25,15 +32,15 @@ header {
 h1 {
   text-align: center;
   color: var(--color-foam);
-  line-height: 1.4;
+  line-height: var(--line-height-m);
   margin: 0;
-  letter-spacing: 0.025em;
+  letter-spacing: var(--letter-spacing-s);
   text-transform: uppercase;
-  padding-block: 16px;
+  padding-block: var(--spacing-l);
 }
 
 h2 {
-  letter-spacing: 0.025em;
+  letter-spacing: var(--letter-spacing-s);
 }
 
 strong {
@@ -43,8 +50,8 @@ strong {
 section {
   display: flex;
   flex-wrap: wrap;
-  gap: 32px;
-  padding: 16px;
+  gap: var(--spacing-2xl);
+  padding: var(--spacing-l);
   width: min(1000px, 100%);
   margin: 0 auto;
 }
@@ -62,28 +69,28 @@ figure {
   width: min(100%, 400px);
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: var(--spacing-s);
   margin: 0;
-  padding: 10px;
+  padding: var(--spacing-s);
   background-color: var(--color-nemo);
-  border-radius: var(--border-radius-small);
+  border-radius: var(--border-radius-s);
 }
 
 figcaption {
-  color: rgb(255 255 255);
+  color: var(--color-foam);
 }
 
 nav {
   display: flex;
   flex-wrap: wrap;
-  gap: 8px 16px;
+  gap: var(--spacing-xs) var(--spacing-l);
 }
 
 a {
   display: inline-block;
   font-size: smaller;
-  padding: 8px;
-  border-radius: var(--border-radius-small);
+  padding: var(--spacing-xs);
+  border-radius: var(--border-radius-s);
   background-color: var(--color-nemo);
   color: var(--color-foam);
 }
@@ -97,8 +104,8 @@ a:focus-visible {
 mark {
   background-color: var(--color-nemo);
   color: var(--color-foam);
-  border-radius: var(--border-radius-small);
-  letter-spacing: 0.025em;
+  border-radius: var(--border-radius-s);
+  letter-spacing: var(--letter-spacing-s);
 }
 
 ::selection {
