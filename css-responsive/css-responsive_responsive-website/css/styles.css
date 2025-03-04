@@ -266,3 +266,12 @@ CSS based on conditions such as viewport width, etc. */
 /* --- */
 /* Replace this comment with your media query. */
 /* --- */
+
+@media (min-width: 1200px) {
+
+  article.product-card.--forest {
+    width: 100%
+  }
+
+}
+
