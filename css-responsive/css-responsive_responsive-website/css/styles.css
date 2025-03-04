@@ -243,6 +243,25 @@ CSS based on conditions such as viewport width, etc. */
 /* Replace this comment with your media query. */
 /* --- */
 
+@media (min-width: 600px) {
+
+  .intro-text {
+    width: 45%;
+  }
+
+  .card-section {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    gap: var(--gap);
+    flex-wrap: wrap;
+  }
+
+  .product-card {
+    width: 45%;
+  }
+}
+
 /* Media Query Desktop */
 /* --- */
 /* Replace this comment with your media query. */
