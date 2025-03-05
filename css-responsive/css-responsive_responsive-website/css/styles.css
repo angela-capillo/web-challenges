@@ -270,8 +270,25 @@ CSS based on conditions such as viewport width, etc. */
 @media (min-width: 1200px) {
 
   article.product-card.--forest {
-    width: 100%
+    width: 100%;
+    box-shadow: none;
+  }
+
+  body {
+    max-width: 1200px;
+    margin: auto;
+  }
+
+  .main-header {
+    max-width: 1200px;
+  }
+
+  .navbar {
+    max-width: 1200px;
+  }
+
+  .main-content {
+    padding: 0 0 var(--gap) 0;
   }
 
 }
-
