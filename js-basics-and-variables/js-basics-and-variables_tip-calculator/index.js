@@ -25,4 +25,4 @@ console.log(totalCost);
 
 console.clear();
 
-console.log("I got a", mealCost, "€ space burrito. I gave the waiter a", tipPercentage,"% tip, so ultimately I paid", totalCost, "€." )
+console.log("I got a", mealCost, "€ space burrito. I gave the waiter a", tipPercentage, "% tip, so ultimately I paid", totalCost, "€." )
