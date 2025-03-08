@@ -11,6 +11,12 @@ console.clear();
 
 // --v-- write your code here --v--
 
+const postTitle = "Candy Mountain sucks";
+const postContent = "Just arrived in Candy Mountain and the weather is terrible, the landscape is worse and Pink and Blue won't leave me alone!";
+let postLikes = 0;
+const postCreator = "Charlie";
+const isReported = false;
+
 // --^-- write your code here --^--
 
 /*
@@ -18,5 +24,21 @@ console.clear();
 */
 
 // --v-- write your code here --v--
+console.log("Title:", postTitle);
+console.log("Content:", postContent);
+console.log("Likes:", postLikes);
+console.log("Creator:", postCreator);
+console.log("Reported:", isReported);
+
+console.clear()
+
+postLikes++;
+
+console.log("Title:", postTitle);
+console.log("Content:", postContent);
+console.log("Likes:", postLikes);
+console.log("Creator:", postCreator);
+console.log("Reported:", isReported);
+
 
 // --^-- write your code here --^--
