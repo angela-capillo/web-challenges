@@ -3,13 +3,26 @@ console.clear();
 // Part 1: Password
 const SUPER_SECRET_PASSWORD = "h4x0r1337";
 
-const receivedPassword = "password1234";
+const receivedPassword = "h4x0r1337";
+
+if (receivedPassword === SUPER_SECRET_PASSWORD) {
+    console.log("Welcome! You are logged in as Brunhilde1984.");
+} else {
+    console.log("Access denied!");
+};
 
 // Part 2: Even / Odd
-const number = 6;
+const number = 7;
+
+if (number % 2 == 0) {
+    console.log("Even number!");
+} else {
+    console.log("Odd number!");
+};
 
 // Part 3: Hotdogs
 const numberOfHotdogs = 42;
+
 
 // Part 4: Daytime
 const currentHour = 12;
