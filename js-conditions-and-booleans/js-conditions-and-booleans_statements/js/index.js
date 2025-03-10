@@ -21,8 +21,17 @@ if (number % 2 == 0) {
 };
 
 // Part 3: Hotdogs
-const numberOfHotdogs = 42;
+const numberOfHotdogs = 489;
 
+if (numberOfHotdogs < 5) {
+    console.log("Hotdog price: 2€");
+} else if (numberOfHotdogs >= 5 && numberOfHotdogs < 100) {
+    console.log("Hotdog price: 1.50€");
+} else if (numberOfHotdogs >= 100 && numberOfHotdogs < 1000000) {
+    console.log("Hotdog price: 1€");
+} else if (numberOfHotdogs >= 1000000){
+    console.log("Hotdog price: 0.10€");
+};
 
 // Part 4: Daytime
 const currentHour = 12;
