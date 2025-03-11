@@ -10,6 +10,11 @@ console.clear();
 
 // --v-- write your code here --v--
 
+const bookTitle = "Candy Mountain: The Official Guide";
+const bookAuthor = "Charlie The Unicorn";
+let bookRating = 5;
+let bookSales = 1;
+
 // --^-- write your code here --^--
 
 /*
@@ -28,6 +33,17 @@ Then:
 
 // --v-- write your code here --v--
 
+// console.log(bookTitle);
+// console.log(bookAuthor);
+// console.log(bookRating);
+// console.log(bookSales);
+
+bookSales = bookSales + 5 ;
+bookRating-- ;
+
+// console.log(bookRating);
+// console.log(bookSales);
+
 // --^-- write your code here --^--
 
 /*
@@ -41,4 +57,20 @@ Then:
 
 // --v-- write your code here --v--
 
+function logBookData() {
+  console.log(bookTitle);
+  console.log(bookAuthor);
+  console.log(bookRating);
+  console.log(bookSales);
+}
+
+logBookData();
+
+bookSales = bookSales + 2 ;
+
+logBookData();
+
+bookSales++;
+
+logBookData();
 // --^-- write your code here --^--
