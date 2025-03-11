@@ -4,9 +4,16 @@
   --header-bg: #ff4a11;
   --header-text: #3f0097;
 
-  --main-bg: ##fddcd2;
+  --main-bg: #fddcd2;
   --main-text: #ff4a11;
   --main-title-bg: #3f0097;
+
+  --section-bg: #3f0097;
+  --section-text: #fddcd2;
+  --section-title-bg: #ff4a11;
+
+  --footer-bg: #201e1d;
+  --footer-text: #fddcd2;
 
   --card-bg: #8336ff7b;
   --card-text: #201e1d;
