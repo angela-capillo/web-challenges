@@ -17,6 +17,22 @@ form.addEventListener("submit", (event) => {
 
   // --v-- write your code here --v--
 
+  tosCheckbox.addEventListener("input", () => {
+    if (tosCheckbox.checked) {
+      hideTosError();
+    } else {
+      showTosError();
+    }
+  });
+
+  tosError.addEventListener("input", () => {
+    if (tosCheckbox.checked) {
+      hideTosError();
+    } else {
+      showTosError();
+    }
+  });
+
   // --^-- write your code here --^--
 
   // eslint-disable-next-line no-alert
