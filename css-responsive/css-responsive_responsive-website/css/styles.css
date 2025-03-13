@@ -291,4 +291,7 @@ CSS based on conditions such as viewport width, etc. */
     padding: 0 0 var(--gap) 0;
   }
 
+  .--forest {
+    box-shadow: none;
+  }
 }
