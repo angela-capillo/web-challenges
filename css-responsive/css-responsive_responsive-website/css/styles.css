@@ -243,7 +243,55 @@ CSS based on conditions such as viewport width, etc. */
 /* Replace this comment with your media query. */
 /* --- */
 
+@media (min-width: 600px) {
+
+  .intro-text {
+    width: 45%;
+  }
+
+  .card-section {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    gap: var(--gap);
+    flex-wrap: wrap;
+  }
+
+  .product-card {
+    width: 45%;
+  }
+}
+
 /* Media Query Desktop */
 /* --- */
 /* Replace this comment with your media query. */
 /* --- */
+
+@media (min-width: 1200px) {
+
+  article.product-card.--forest {
+    width: 100%;
+    box-shadow: none;
+  }
+
+  body {
+    max-width: 1200px;
+    margin: auto;
+  }
+
+  .main-header {
+    max-width: 1200px;
+  }
+
+  .navbar {
+    max-width: 1200px;
+  }
+
+  .main-content {
+    padding: 0 0 var(--gap) 0;
+  }
+
+  .--forest {
+    box-shadow: none;
+  }
+}
