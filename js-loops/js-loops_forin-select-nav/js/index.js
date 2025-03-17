@@ -22,6 +22,16 @@ main.append(select);
 
 // --v-- write or modify code below this line --v--
 
+
+for (let index in languages) {
+  //console.log(languages[index]);
+  let language = languages[index];
+  selectOption = document.createElement("option");
+  selectOption.value = languages[index];
+  selectOption.textContent = languages[index];
+  select.append(selectOption);
+};
+
 // --^-- write or modify code above this line --^--
 
 // Part 2: Creating a Navigation Bar
