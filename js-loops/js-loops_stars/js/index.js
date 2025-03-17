@@ -10,12 +10,20 @@ function renderStars(filledStars = 0) {
 
   for (let index = 1; index <= 5; index++) {
     star = document.createElement("img");
-    if (index <= filledStars) {star.src = "assets/star-filled.svg";}
-    else {star.src = "assets/star-empty.svg";}
+    if (index <= filledStars) {
+      star.src = "assets/star-filled.svg";
+    }
+    else {
+      star.src = "assets/star-empty.svg";
+    }
+    star.addEventListener("click", () => {
+      renderStars(index);
+    });
     starContainer.append(star);
   }
+  
 
   // --^-- write or modify code above this line --^--
 }
 
-renderStars(4);
+renderStars();
