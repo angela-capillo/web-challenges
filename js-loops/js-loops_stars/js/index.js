@@ -8,6 +8,12 @@ function renderStars() {
 
   // --v-- write or modify code below this line --v--
 
+  for (let index = 1; index <= 5; index++) {
+    star = document.createElement("img");
+    star.src = "assets/star-empty.svg";
+    starContainer.append(star);
+  }
+
   // --^-- write or modify code above this line --^--
 }
 
