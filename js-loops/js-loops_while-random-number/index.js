@@ -5,6 +5,17 @@ let count = 0;
 
 // --v-- write or modify code below this line --v--
 
+// while (number <= 0.9) {
+//   number = Math.random();
+//   console.log(number, count);
+//   count++;
+// };
+
+do {number = Math.random();
+  console.log(number, count);
+  count++;}
+while (number <= 0.9);
+
 // --^-- write or modify code above this line --^--
 
 console.log(
