@@ -6,20 +6,33 @@ import { employees } from "../utils/db.js";
 // Check the browser preview and conduct some tests to ensure it works correctly.
 
 function findByLastName(employees, lastName) {
-  return null;
+  for (let employee of employees) {
+    if (employee.lastName.includes(lastName)) {
+      return employee;
+    };
+  };
+};
 
-  // Exercise 2:
-  // The same as above, but now you are searching by the 'id'.
-}
+// Exercise 2:
+// The same as above, but now you are searching by the 'id'.
+
 function findById(employees, id) {
-  return null;
-}
+  for (let employee of employees) {
+    if (employee.id.includes(id)) {
+      return employee;
+    };
+  };
+};
 
 // Exercise 3:
 // This time you want to find an employee who lives in a city that includes a specific substring.
 
 function findByCitySubString(employees, string) {
-  return null;
+  for (let employee of employees) {
+    if (employee.city.includes(string)) {
+      return employee;
+    };
+  };
 }
 
 // Bonus:
@@ -27,7 +40,11 @@ function findByCitySubString(employees, string) {
 // AND who is older than a specific age
 
 function findByProfessionSubStringAndAge(employees, string, age) {
-  return null;
+  for (let employee of employees) {
+    if (employee.profession.includes(string) && employee.age > age) {
+      return employee;
+    };
+  };
 }
 
 // ------------------------------------------------------------------------------
