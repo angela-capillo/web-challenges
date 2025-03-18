@@ -78,9 +78,15 @@ const animals = [
 ];
 
 // Hint: Besides the array method, check out the string method `startsWith()`.
-const firstAnimalStartingWithLetterG = null;
+const firstAnimalStartingWithLetterG = animals.find((animal) =>
+  animal.name.startsWith("g")
+);
+console.log(firstAnimalStartingWithLetterG);
 
-const indexOfAnimalWithNameLongerFive = null;
+const indexOfAnimalWithNameLongerFive = animals.findIndex(
+  (animal) => animal.name.length > 5
+);
+console.log(indexOfAnimalWithNameLongerFive);
 
 // Note:
 // - Sorting strings is slightly more complicated than sorting numbers.
@@ -91,26 +97,53 @@ const indexOfAnimalWithNameLongerFive = null;
 // Hint: sort() mutates the original array, which is bad.
 // Make sure to use toSorted() instead.
 
-const animalsSortedAlphabetically = null;
+const animalsSortedAlphabetically = animals.toSorted((animalA, animalB) => {
+  if (animalA.name < animalB.name) {
+    return -1;
+  } else if (animalA.name > animalB.name) {
+    return 1;
+  } else {
+    return 0;
+  }
+});
+console.log(animalsSortedAlphabetically);
 
-const animalsSortedByWeightStartingWithLowest = null;
+const animalsSortedByWeightStartingWithLowest = animals.toSorted(
+  (animalA, animalB) => animalA.weight - animalB.weight
+);
+console.log(animalsSortedByWeightStartingWithLowest);
 
 // Note:
 // - reverse() mutates the original array (like sort() does), which is bad.
 // Use toReversed() instead (or any other method to get the expected result)
 
-const animalsSortedByWeightReversed = null;
+const animalsSortedByWeightReversed = animals.toReversed(
+  (animalA, animalB) => animalA.weight - animalB.weight
+);
+console.log(animalsSortedByWeightReversed);
 
-const animalWithWeightMoreThanFivehundredExists = null;
+const animalWithWeightMoreThanFivehundredExists = animals.some(
+  (animal) => animal.weight > 500
+);
+console.log(animalWithWeightMoreThanFivehundredExists);
 
 // Hint: Filter for Europe first, then check every animal for its weight.
-const allAnimalsInEuropeWeighLessThanOnehundred = null;
+const allAnimalsInEuropeWeighLessThanOnehundred = animals.filter(
+  (animal) => animal.continents.includes("Europe") && animal.weight < 100
+);
+console.log(allAnimalsInEuropeWeighLessThanOnehundred);
 
 // Hint: filter + map + reduce
-const weightOfAllAnimalsInAfrica = null;
+const weightOfAllAnimalsInAfrica = animals
+  .filter((animal) => animal.continents.includes("Africa"))
+  .map((animal) => animal.weight)
+  .reduce((accumulator, weight) => accumulator + weight, 0);
+console.log(weightOfAllAnimalsInAfrica);
 
 // Hint: As above, but divided by the number of animals in Africa.
-const averageWeightOfAllAnimalsInAfrica = null;
+const averageWeightOfAnimalsInAfrica = weightOfAllAnimalsInAfrica / animals.filter((animal) => animal.continents.includes("Africa")).length;
+console.log(averageWeightOfAnimalsInAfrica);
+
 
 export {
   firstAnimalStartingWithLetterG,
@@ -121,5 +154,5 @@ export {
   animalWithWeightMoreThanFivehundredExists,
   allAnimalsInEuropeWeighLessThanOnehundred,
   weightOfAllAnimalsInAfrica,
-  averageWeightOfAllAnimalsInAfrica,
+  averageWeightOfAnimalsInAfrica,
 };
