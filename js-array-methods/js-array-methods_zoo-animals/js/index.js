@@ -5,8 +5,14 @@ import { zooAnimals } from "../utils/db.js";
 // The function should return 'true' if the animal name is included in the array or 'false' if not.
 
 function hasAnimal(animals, animalName) {
-  return null;
-}
+  if (animals.includes(animalName)) {
+      return true}
+  else {
+    return false
+  };
+};
+
+console.log(hasAnimal(zooAnimals, "Giraffe"));
 
 // Bonus:
 // Can you modify the function so that it works case-insensitive?
