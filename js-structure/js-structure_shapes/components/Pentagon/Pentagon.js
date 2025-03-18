@@ -1,6 +1,6 @@
-import getRandomColor from "../../utils/randomColor";
+import getRandomColor from "../../utils/randomColor.js";
 
-function Pentagon() {
+export default function Pentagon() {
   const pentagon = document.createElement("div");
   pentagon.classList.add("pentagon");
   pentagon.addEventListener("click", () => {
@@ -8,5 +8,3 @@ function Pentagon() {
   });
   return pentagon;
 }
-
-export default Pentagon();

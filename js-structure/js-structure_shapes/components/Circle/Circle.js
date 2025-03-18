@@ -1,6 +1,6 @@
-import getRandomColor from "../../utils/randomColor";
+import getRandomColor from "../../utils/randomColor.js";
 
-function Circle() {
+export default function Circle() {
   const circle = document.createElement("div");
   circle.classList.add("circle");
   circle.addEventListener("click", () => {
@@ -8,5 +8,3 @@ function Circle() {
   });
   return circle;
 }
-
-export default Circle();

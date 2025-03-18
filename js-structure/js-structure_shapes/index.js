@@ -1,6 +1,6 @@
-import Circle from "./components/Circle/Circle";
-import Pentagon from "./components/Pentagon/Pentagon";
-import Square from "./components/Square/Square";
+import Circle from "./components/Circle/Circle.js";
+import Pentagon from "./components/Pentagon/Pentagon.js";
+import Square from "./components/Square/Square.js";
 
 console.clear();
 
