@@ -19,4 +19,18 @@ const colors = [
   "#A5A5A5",
 ];
 
-colors.forEach();
+colors.forEach((color) => {
+  const colorBox = document.createElement("div");
+  colorBox.className = "color-box";
+  colorBox.style.backgroundColor = color;
+  document.body.append(colorBox);
+});
+
+function renderColorBox(color) {
+    const colorBox = document.createElement("div");
+    colorBox.className = "color-box";
+    colorBox.style.backgroundColor = color;
+    document.body.append(colorBox);
+};
+
+colors.forEach(renderColorBox);
