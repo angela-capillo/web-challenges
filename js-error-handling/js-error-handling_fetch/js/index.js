@@ -7,7 +7,9 @@ const errorElement = document.querySelector("[data-js='error']");
 async function fetchUserData(url) {
   try {
     const response = await fetch(url);
-
+    if (response.status === 404) {
+      throw new Error("Error 404: user not found");
+    }
     return await response.json();
   } catch (error) {
     return { error: error.message };
