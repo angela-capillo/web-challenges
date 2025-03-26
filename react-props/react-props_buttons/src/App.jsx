@@ -1,5 +1,5 @@
 function Button({ text, color, isDisabled }) {
-  return (<button style={{backgroundColor: color}} disabled={isDisabled}>
+  return (<button style={{backgroundColor: color}} disabled={isDisabled} onClick={() => console.log("Ciao :)")}>
     {text}
   </button>)
 }
