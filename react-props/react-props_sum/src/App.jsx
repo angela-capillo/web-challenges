@@ -1,3 +1,8 @@
+function Sum({ number1, number2 }) {
+  const sum = number1 + number2;
+  return <h1>{number1} + {number2} = {sum}</h1>;
+}
+
 export default function App() {
-  return <h1>Replace me with your component!</h1>;
+  return <Sum number1= {5} number2= {10} />;
 }
