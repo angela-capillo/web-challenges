@@ -1,7 +1,16 @@
 import "./styles.css";
+import { useState } from "react";
 
 export default function App() {
-  let count = 0;
+  const [count, setCount] = useState(0);
+
+  function handleIncreaseCount() {
+    setCount(count + 1);
+  }
+
+  function handleDecreaseCount() {
+    setCount(count - 1);
+  }
 
   return (
     <div className="container">
@@ -9,17 +18,13 @@ export default function App() {
       <div className="button-container">
         <button
           type="button"
-          onClick={() => {
-            console.log("🤔");
-          }}
+          onClick={handleDecreaseCount}
         >
           -
         </button>
         <button
           type="button"
-          onClick={() => {
-            console.log("🤔");
-          }}
+          onClick={handleIncreaseCount}
         >
           +
         </button>
