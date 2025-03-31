@@ -1,11 +1,23 @@
+
 import { useState } from "react";
 
-export default function Form() {
+export default function Form({onCreateUser}) {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
 
   function handleSubmit(event) {
     event.preventDefault();
+
+    // const form = new FormData(event.target);
+    // const data = Object.fromEntries(form);
+    onCreateUser(name, email);
+
+    // setName(data.name);
+    // setEmail(data.email);
+
+    // console.log(name);
+    // console.log(email);
+    // form.reset(); doesn't work :/
   }
 
   return (
@@ -16,9 +28,9 @@ export default function Form() {
     >
       <h2 id="user-details">Please enter your details here!</h2>
       <label htmlFor="name">Name: </label>
-      <input id="name" name="name" type="text" placeholder="John Doe" />
+      <input id="name" name="name" type="text" placeholder="John Doe" value={name} onChange={(event) => setName(event.target.value)}/>
       <label htmlFor="email">Email: </label>
-      <input id="email" name="email" type="email" placeholder="john@doe.com" />
+      <input id="email" name="email" type="email" placeholder="john@doe.com" value={email} onChange={(event) => setEmail(event.target.value)}/>
       <button className="form__submit-button" type="submit">
         Submit
       </button>
