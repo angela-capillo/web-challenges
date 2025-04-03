@@ -1,3 +1,8 @@
+function Greeting({ name }) {
+
+  return <h1> { name === "Marcell" ? "Hello coach!" : `Hello ${name} !`}</h1>
+}
+
 export default function App() {
-  return <h1>Replace me with your component!</h1>;
+  return <Greeting name="Marcell" />;
 }
