@@ -9,7 +9,7 @@ export default async function handler(request, response) {
 	console.log("request method", request.method)
 	
 	if (request.method === "GET") {
-		const products = await Product.findById(id);
+		const products = await Product.findById(id).populate("reviews");
 	
 		if (!products) {
 		response.status(404).json({ status: "Not found." });
