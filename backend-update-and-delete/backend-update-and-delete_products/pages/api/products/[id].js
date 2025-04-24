@@ -17,5 +17,13 @@ export default async function handler(request, response) {
     return;
   }
 
+  if (request.method === "PUT") {
+    const productToUpdate = request.body;
+
+    await Product.findByIdAndUpdate(id, productToUpdate);
+    response.status(200).json({ message: "Product successfully updated."});
+    return;
+  }
+
   response.status(405).json({ status: "Method not allowed." });
 }
