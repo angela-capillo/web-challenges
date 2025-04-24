@@ -4,6 +4,7 @@ import { useRouter } from "next/router";
 import StyledLink from "@/components/Link";
 import { useState } from "react";
 import ProductForm from "@/components/ProductForm";
+import Comments from "@/components/Comments";
 
 export default function Product() {
   const [isEditMode, setIsEditMode] = useState(false);
@@ -61,6 +62,7 @@ export default function Product() {
       <p>
         Price: {data.price} {data.currency}
       </p>
+      <Comments reviews={data.reviews}/>
       <button type="button" onClick={() => { setIsEditMode(!isEditMode); }}>Edit</button>
       {isEditMode && (
 				<ProductForm
